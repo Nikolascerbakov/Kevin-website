@@ -5,189 +5,167 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nikola Sce</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
+
+    <link rel="stylesheet"
+          href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 
 
-  <body>
-      <header class="primary-header">
-          <div class="container">
-              <div class="nav-wrapper">
-                  <a href="#"><img src="images/sneak.png" alt="Manage"></a>
-                  <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-                      <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="" aria-hidden="true">
-                      <img class="icon-close" src="images/icon-close.svg" alt="" aria-hidden="true">
-                      <span class="visually-hidden">Menu</span>
-                  </button>
-                  <nav class="primary-navigation" id="primary-navigation">
-                      <ul aria-label="Primary" role="list" class="nav-list">
-                          <li><a href="index.html">Home</a></li>
-                          <li><a href="About.html">About</a></li>
-                          <li><a href="Volleyball.html">Volleyball</a></li>
-                          <li><a href="#">Hobbies</a></li>
-                          <li><a href="#">Contact</a></li>
+<body>
+    <header class="primary-header">
+        <div class="nav-wrapper">
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="visually-hidden">Menu</span>
+            </button>
+            <nav class="primary-navigation" id="primary-navigation">
+                <ul aria-label="Primary" role="list" class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">Articles</a></li>
+                    <li><a href="Volleyball.html">About</a></li>
+                    <li><a href="content.html">Courses</a></li>
+                    <li><a href="Contact.html">Resources</a></li>
+                    <li><a href="Contact.html">Newsletter</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-                      </ul>
-                  </nav>
-                  <button class="button | display-sm-none display-md-inline-flex">Fun button</button>
-              </div>
-          </div>
-      </header>
+    <main>
 
-      <main>
-          <section class="padding-block-900">
-              <div class="container">
-                      <div class="headlineDiv">
-                          <h1 class="fs-primary-heading fw-bold">
-                              Aspiring developer ready to take over the world
-                          </h1>
-                          <p>
-                              You shouldn't miss out a chance to become a part of it!
-                          </p>
-                          <button class="button">Get in touch</button>
-                      </div>                  
-              </div>
-          </section>
+        <div class="container ">
+            <section aria-labelledby="hero-title" class="hero">
+                <h1 class="hero_title"> Hi, I'm Kevin. I teach people how to make the web and how to make it look good while they're at it.</h1>
 
-          <section class="padding-block-900">
-              <div class="container">
-                  <div class="even-columns">
-                      <div class="flow text-center-sm-only margi" style="--flow-spacer: 1.5rem">
-                          <h2 class="fs-secondary-heading fw-bold">Why Nikolasce?</h2>
-                          <p>
-                              Experience in diverse industries such as sports, gaming, content creation.
-                          </p>
-                      </div>
-                      <div>
-                          <ul class="numbered-items | flow" role="list">
-                              <li>
-                                  <div class="flow" style="--flow-spacer: 1em">
-                                      <h3 class="numbered-items__title | fs-600 fw-bold">Professional athlete background</h3>
-                                      <p class="numbered-items__body" data-width="wide">
-                                          Successful professional athlete winning multiple championships and cups.
-                                          Played internationally all over the world.
-                                          Lived in different cultures and environments.
-                                      </p>
-                                  </div>
-                              </li>
-                              <li>
-                                  <div class="flow" style="--flow-spacer: 1em">
-                                      <h3 class="numbered-items__title | fs-600 fw-bold">Passionate about gaming</h3>
-                                      <p class="numbered-items__body" data-width="wide">
-                                          Once he got his hands on a PS1 his gaming repertoire just grew.
-                                          Experienced biggest games on all versions of Playstation.
-                                          Played at the highest levels in multiple games such as League of Legends, CSGO,
-                                          World of Warcraft, TFT...
-                                      </p>
+                <div class="hero-img">
+                    <img src="images/Nikola-pfp.jpg"
+                         alt="Put kevin or random photo later"
+                         height="380">
+                </div>
 
-                                  </div>
-                              </li>
-                              <li>
-                                  <div class="flow" style="--flow-spacer: 1em">
-                                      <h3 class="numbered-items__title | fs-600 fw-bold">Proficient in content creation</h3>
-                                      <p class="numbered-items__body" data-width="wide">
-                                          Made content for youtube, twitch, instagram, shorts you name it.
-                                          Experience with editing and exporting different video sizes for different platforms.
-                                      </p>
+                <div class="hero_paragraph flow">
+                    <p>
+                        I learned to make websites on my own. I know how fun and rewarding it is, but I also know that it can be incredibly frustrating. 
+                        <strong>I'm here to help make your journey into web development as easy and as fun as possible.</strong>
+                    </p>
+                    <p>
+                        Whether you're trying to learn what you need to tweak your small business' website or you're looking to jump start a new career, I'm here to help.
+                    </p>
+                </div>
 
-                                  </div>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </section>
+                <!--idea to put icons to the sidebar either left or right-->
+
+                <!--<div class="icons">
+                    <a href="https://www.youtube.com/@nikolasce9"><i class="ri-youtube-line"></i></a>
+                    <a href="https://www.instagram.com/nikolasce/"><i class="ri-instagram-line"></i></a>
+                    <a href="In progress"><i class="ri-twitter-x-line"></i></a>
+                    <a href="https://github.com/Nikolascerbakov"><i class="ri-github-fill"></i></a>
+                    <a href="https://www.facebook.com/nikola.scerbakov"><i class="ri-facebook-circle-line"></i></a>
+                    <a href=""><i class="ri-dribbble-line"></i></a>
+                </div>-->
 
 
-      </main>
-
-      <footer class="primary-footer | padding-block-700 bg-gray-400 text-accent-400">
-          <div class="container">
-              <div class="primary-footer-wrapper">
-                  <div class="primary-footer-logo-social">
-                      <a href="#" aria-label="home">
-                          <img src="images/sneak.png" alt="Nikolasce">
-                      </a>
-
-                      <ul class="social-list" role="list" aria-label="Social links">
-                          <li>
-                              <a aria-label="facebook" href="#">
-                                  <svg class="social-icon">
-                                      <use xlink:href="images/social-icons.svg#icon-facebook"></use>
-                                  </svg>
-                              </a>
-                          </li>
-                          <li>
-                              <a aria-label="youtube" href="#">
-                                  <svg class="social-icon">
-                                      <use xlink:href="images/social-icons.svg#icon-youtube"></use>
-                                  </svg>
-                              </a>
-                          </li>
-                          <li>
-                              <a aria-label="twitter" href="#">
-                                  <svg class="social-icon">
-                                      <use xlink:href="images/social-icons.svg#icon-twitter"></use>
-                                  </svg>
-                              </a>
-                          </li>
-                          <li>
-                              <a aria-label="pinterest" href="#">
-                                  <svg class="social-icon">
-                                      <use xlink:href="images/social-icons.svg#icon-pinterest"></use>
-                                  </svg>
-                              </a>
-                          </li>
-                          <li>
-                              <a aria-label="instragram" href="#">
-                                  <svg class="social-icon">
-                                      <use xlink:href="images/social-icons.svg#icon-instagram"></use>
-                                  </svg>
-                              </a>
-                          </li>
-                      </ul>
-                  </div>
-                  <div class="primary-footer-nav">
-                      <nav class="footer-nav">
-                          <ul class="flow fw-bold" style="--flow-spacer: 1em" aria-label="Footer" role="list">
-                              <li><a href="#">Home</a></li>
-                              <li><a href="#">Pricing</a></li>
-                              <li><a href="#">Products</a></li>
-                              <li><a href="#">About Us</a></li>
-                              <li><a href="#">Careers</a></li>
-                              <li><a href="#">Community</a></li>
-                              <li><a href="#">Privacy Policy</a></li>
-                          </ul>
-                      </nav>
-                  </div>
-                  <div class="primary-footer-form">
-                      <form  action="">
-                          <input class="footerForm" type="email">
-                          <button data-type="inverted" class="button" data-shadow="none">Go</button>
-                      </form>
-                      <p class="fw-bold">Copyright 2023. All Rights Reserved</p>
-                  </div>
-              </div>
-          </div>
-      </footer>
-      
+            </section>
 
 
+        </div>
+
+        <section aria-labelledby="youtube-title" class="home-section youtube">
+
+            <div class="container flow">
+                <header>
+                    <h2 class="section_title">youtube</h2>
+                    <p class="section_subtitle">learn for free</p>
+                </header>
+                <p>
+                    <strong>Weekly vlog or shorts videos of my adventures in life.</strong>
+                    A big backlog of my previous adventures will be released subsequently
+                    <strong>Sprinkle in some volleyball magic and videos on top to make it spicy</strong>
+                </p>
+                <p></p>
+                <a href="https://www.youtube.com/@nikolasce9" class="button">Watch on yt</a>
+
+            </div>
 
 
+        </section>
+
+        <section aria-labelledby="article-title" class="home-section article">
+            <div class="container flow">
+                <header>
+                    <h2 class="section_title">articles</h2>
+                    <p class="section_subtitle">quick hit tips & tricks</p>
+                </header>
+                <p>
+                    While learning Frontend development or just life in general, I come across a lot of <strong>fun snippets of information</strong> and <strong>little known life hacks or CSS properties</strong>
+                    that arent really worth building full videos about.
+                </p>
+                <p>
+                    I share these little bits of information — plus the occasional deep dive — through my articles.
+                </p>
+                <a href="#" class="button">let's get reading</a>
+            </div>
+
+        </section>
+
+        <section aria-labelledby="volleyball-title" class="home-section volleyball">
+            <div class="container flow volleyballDiv">
+                <header>
+                    <h2 class="section_title">volleyball</h2>
+                    <p class="section_subtitle">my complete journey</p>
+                </header>
+                <p>
+                    I dedicated most of my life to volleyball, played internationally and achieved success.
+                    While it had its ups and downs <strong>I'm proud of my acomplishments and the path I took</strong>
+                </p>
+                <p>I will share my full journey and some insights into my history while maybe revealing some new behind the scenes</p>
+                <a href="Volleyball.html" class="button volleyballColor">Take me there</a>
+            </div>
+        </section>
+
+        <section aria-labelledby="newsletter-title" class="home-section newsletter">
+            <div class="container flow">
+                <header>
+                    <h2 class="section_title">newsletter</h2>
+                    <p class="section_subtitle">in progress...</p>
+                </header>
+                <p>
+                    I'm still undecided whether i should start a newsletter. Never even considered one until i found
+                    a <a href="https://www.youtube.com/watch?v=ozWseKZV6Ac" class="youtubeLink" target="_blank">youtube video</a> about it
+                </p>
+                <p>
+                    Ever since then im imagining how cool it would be to ramble about things and maybe spark
+                    some ideas in other people!
+                </p>
+                <p>TBD!</p>
+            </div>
+        </section>
 
 
+    </main>
+
+    <footer class="primary-footer">
+        <p>Find me elsewhere on the web as well:</p>
+        <ul role="list" class="social-list">
+            <li>
+                <a href="https://www.linkedin.com/in/nikola-scerbakov-466b25284/">LinkedIn</a>
+            </li>
+
+            <li><a href="https://www.instagram.com/nikolasce/">Instagram</a></li>
+            <li><a href="https://www.youtube.com/@nikolasce9">Youtube</a></li>
+            <li><a href="in progress...">Twitch</a></li>
+            <li><a href="https://github.com/Nikolascerbakov">Github</a></li>
+            <li><a href="https://www.facebook.com/nikola.scerbakov">Facebook</a></li>
+        </ul>
+        <p>
+            © 2023 Nikola Sce Industries
+        </p>
+    </footer>
 
 
-
-
-
-
-
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script type="module" src="/main.js"></script>
-  </body>
+</body>
 </html>
