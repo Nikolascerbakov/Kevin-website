@@ -219,11 +219,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--clr-grayblack-500);
+    background-color: var(--clr-neutral-900);
 }
 
 body::-webkit-scrollbar-track {
-    background: var(--clr-graywhite-500);
+    background: var(--clr-neutral-300);
 }
 
 /* body*/
@@ -443,6 +443,11 @@ body::-webkit-scrollbar-track {
         color: var(--clr,var(--clr-grayblack-500));
     }
 
+.primary-navigation ul>* {
+    margin: 0 0.5em;
+    padding: 0 0.5em;
+}
+
 
 .mobile-nav-toggle {
     display: none;
@@ -513,6 +518,9 @@ a:visited {
         width: max-content;
     }
 
+.home-section.youtube{
+   
+}
 
 .home-section.youtube {
     background-image: url(images)
