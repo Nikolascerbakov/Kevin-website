@@ -395,10 +395,6 @@ body::-webkit-scrollbar-track {
 
   /* navigation */
 
-        .primary-header {
-    /* padding-top: var(--size-700);*/
-}
-
 .primary-navigation {
     padding: 2rem 0;
     font-weight: 600;
@@ -752,6 +748,29 @@ a:visited {
 .display-sm-none {
     display: none;
 }
+
+.screenreader-text:focus {
+    display: inline-block;
+    height: auto;
+    margin: auto;
+    position: static;
+    width: auto
+}
+
+.screenreader-text {
+    height: 1px;
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}
+
+a:focus, a:hover {
+    color: var(--clr-primary-400);
+    text-decoration: none;
+}
+
+
 
 @media (min-width: 50em) {
     .display-md-inline-flex {
