@@ -81,6 +81,10 @@ html {
     text-size-adjust: none;
 }
 
+html {
+    scroll-behavior: smooth
+}
+
 /* Remove default margin in favour of better control in authored CSS */
 body, h1, h2, h3, h4, p,
 figure, blockquote, dl, dd {
@@ -98,6 +102,11 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+}
+
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.6;
 }
 
 /* Set shorter line heights on headings and interactive elements */
