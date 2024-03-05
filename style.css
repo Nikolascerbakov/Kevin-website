@@ -270,11 +270,27 @@ body::-webkit-scrollbar-track {
     display: grid;
     gap: 1em;
     grid-template-areas:
-        "image heading"
-        "image paragraph"
-        "icons icons";
+        "heading"
+        "image"
+        "paragraph";
+    margin-bottom: var(--section-spacing);
     position: relative;
 }
+
+@media only screen and (min-width: 40em) {
+    .hero {
+        grid-template-areas: "image heading" 
+                             "paragraph paragraph"
+    }
+}
+
+@media only screen and (min-width: 65em) {
+    .hero {
+        grid-template-areas: "image heading" 
+                            "image paragraph"
+    }
+}
+
 
 .hero_title {
     color: var(--clr-neutral-100);
@@ -297,18 +313,6 @@ body::-webkit-scrollbar-track {
 
 .hero_paragraph {
     grid-area: paragraph;
-}
-
-@media (max-width:50em) {
-    section {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .hero {
-        display: flex;
-        flex-direction: column;
-    }
 }
 
 /* icons */
@@ -448,7 +452,7 @@ body::-webkit-scrollbar-track {
 
 .primary-navigation ul>* {
     margin: 0 0.5em;
-    padding: 0 0.5em;
+    padding: 0.5em;
 }
 
 
@@ -770,10 +774,3 @@ a:focus, a:hover {
     text-decoration: none;
 }
 
-
-
-@media (min-width: 50em) {
-    .display-md-inline-flex {
-        display: inline-flex;
-    }
-}
