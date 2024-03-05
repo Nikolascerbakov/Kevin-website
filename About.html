@@ -4,232 +4,167 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nikola Sce</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="About.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>Kevin Powell | CSS Evangelist</title>
+    <link href="style.css" rel="stylesheet" />
+
+    <link rel="stylesheet"
+          href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 
-<body>
 
+<body>
     <header class="primary-header">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="#"><img src="images/sneak.png" alt="Nikolasce"></a>
-                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-                    <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="" aria-hidden="true">
-                    <img class="icon-close" src="images/icon-close.svg" alt="" aria-hidden="true">
-                    <span class="visually-hidden">Menu</span>
-                </button>
-                <nav class="primary-navigation" id="primary-navigation">
-                    <ul aria-label="Primary" role="list" class="nav-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="About.html">About</a></li>
-                        <li><a href="Volleyball.html">Volleyball</a></li>
-                        <li><a href="Hobbies.html">Hobbies</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <button class="button | display-sm-none display-md-inline-flex">Fun button</button>
-            </div>
+        <a id="skip-nav" class="screenreader-text" href="#main-content">Skip to content</a>
+        <div class="nav-wrapper">
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="visually-hidden">Menu</span>
+            </button>
+            <nav class="primary-navigation" >
+                <ul aria-label="Primary" role="list" class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Articles.html">Articles</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Courses.html">Courses</a></li>
+                    <li><a href="Resources.html">Resources</a></li>
+                    <li><a href="Newsletter.html">Newsletter</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <main>
-        <section class="padding-block-900">
-            <div class="container">
-                <h1 class="title"></h1>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <h2>Youtube</h2>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <h2>Twitch</h2>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <h2>Deep dive</h2>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+    <main id="main-content">
 
+        <div class="container ">
+            <section aria-labelledby="hero-title" class="hero">
+                <h1 class="hero_title"> Hi, I'm Kevin. I teach people how to make the web and how to make it look good while they're at it.</h1>
 
-
-
-                <!--<div class="split">
-                <div class="split-1">
-                    <h1 class="fs-primary-heading fw-bold">
-                        Creation,Exploration,Imagination
-                    </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum interdum sem et porta. Suspendisse pharetra vulputate iaculis. Curabitur dapibus lectus nunc, vitae maximus sem viverra in. Phasellus ut urna pharetra, varius magna in, posuere erat. Nunc in est in leo consectetur dignissim. Curabitur imperdiet vulputate justo non viverra. Sed nec orci sit amet urna feugiat scelerisque. Vestibulum ac erat semper nunc ullamcorper volutpat.
-
-                        Pellentesque a risus turpis. Praesent eget auctor odio, a aliquam ipsum. Nullam ac lacus nibh. Morbi luctus orci dui, eget ullamcorper metus consectetur vel. Quisque aliquet congue feugiat. Phasellus quis tellus pretium, accumsan lorem vel, fermentum risus. Integer a mi tortor. Proin et condimentum enim, quis tempus arcu. Nunc tellus metus, tristique eu congue ac, pharetra at arcu. Ut quis convallis nulla, in rhoncus lacus.
-
-                        Vivamus bibendum neque vel arcu porttitor rutrum. Etiam blandit leo eu justo luctus, in condimentum nulla laoreet. Integer non rhoncus quam. Nulla diam augue, commodo id nunc non, ullamcorper euismod justo. Morbi imperdiet arcu vel metus elementum, sit amet efficitur turpis volutpat. Nullam maximus scelerisque dapibus. Proin sit amet consequat mi, ut pellentesque leo. Cras quam libero, auctor id finibus nec, sagittis in elit. Sed maximus neque eu mi aliquam auctor.
-                    </p>
-
+                <div class="hero-img">
+                    <picture>
+                        <source srcset="images/f21b00ed-600.jpeg 600w" type="image/jpeg" />
+                        <img src="images/f21b00ed-600.jpeg" height="300" width="300" loading="lazy" decoding="async" alt="Kevin smiling" />
+                    </picture>
                 </div>
 
-                <div class="split-2">
-                    <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": 5000}'>
-                        <div class="carousel-cell">
-                            <img src="images/nikola-biwo1.jpg">
-                        </div>
-                        <div class="carousel-cell">
-                            <img src="images/nikola-biwo2.jpg">
-                        </div>
-                        <div class="carousel-cell">
-                            <img src="images/biwo3.jpg">
-                        </div>
-                        <div class="carousel-cell">
-                            <img src="images/biwo4.jpg">
-                        </div>
-                        <div class="carousel-cell">
-                            <img src="images/biwo5.jpg">
-                        </div>
-                        <div class="carousel-cell">
-                            <img src="images/biwo7.jpg">
-                        </div>
-                        <div class="carousel-cell">
-                            <img src="images/biwo8.jpg">
-                        </div>
-                        <div class="carousel-cell">
-                            <img src="images/biwo9.jpg">
-                        </div>
-                    </div>
+                <div class="hero_paragraph flow">
+                    <p>
+                        I learned to make websites on my own. I know how fun and rewarding it is, but I also know that it can be incredibly frustrating.
+                        <strong>I'm here to help make your journey into web development as easy and as fun as possible.</strong>
+                    </p>
+                    <p>
+                        Whether you're trying to learn what you need to tweak your small business' website or you're looking to jump start a new career, I'm here to help.
+                    </p>
+                </div>
 
-                    </div>
-
+                <!--idea to put icons to the sidebar either left or right-->
+                <!--<div class="icons">
+                    <a href="https://www.youtube.com/@nikolasce9"><i class="ri-youtube-line"></i></a>
+                    <a href="https://www.instagram.com/nikolasce/"><i class="ri-instagram-line"></i></a>
+                    <a href="In progress"><i class="ri-twitter-x-line"></i></a>
+                    <a href="https://github.com/Nikolascerbakov"><i class="ri-github-fill"></i></a>
+                    <a href="https://www.facebook.com/nikola.scerbakov"><i class="ri-facebook-circle-line"></i></a>
+                    <a href=""><i class="ri-dribbble-line"></i></a>
                 </div>-->
 
 
+            </section>
+
+
+        </div>
+
+        <section aria-labelledby="youtube-title" class="home-section youtube">
+
+            <div class="container flow">
+                <header>
+                    <h2 class="section_title">youtube</h2>
+                    <p class="section_subtitle">learn for free</p>
+                </header>
+                <p>
+                    <strong>Weekly front-end web development & design tips, tricks, and tutorials. </strong>
+                    With a focus on HTML & CSS, along with a splash of JS, my videos focus on understanding <strong>fundamental concepts,</strong>
+                    others explore <strong>little known or often misused CSS properties,</strong>  and there are long series that explore taking everything and <strong>building out actual pages.</strong>
+                </p>
+                <p></p>
+                <a href="https://www.youtube.com/kevinpowell" class="button">Watch on yt</a>
+
             </div>
 
 
+        </section>
 
+        <section aria-labelledby="article-title" class="home-section article">
+            <div class="container flow">
+                <header>
+                    <h2 class="section_title">articles</h2>
+                    <p class="section_subtitle">quick hit tips & tricks</p>
+                </header>
+                <p>
+                    While creating my YouTube videos, I come across a lot of
+                    <strong>fun snippets of information and little known CSS properties </strong>
+                    that aren't really worth building full videos about.
+                </p>
+                <p>
+                    I share these little bits of information — plus the occasional deep dive — through my articles.
+                </p>
+                <a href="#" class="button">let's get reading</a>
             </div>
 
         </section>
 
-        <section class="padding-block-900">
-            <div class="container">
-                <div class="readSection">
-                    <h1 class="fs-primary-heading fw-bold">
-                        Read more
-                    </h1>
-                    <p>
-                        more lorem ipsum
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum interdum sem et porta. Suspendisse pharetra vulputate iaculis. Curabitur dapibus lectus nunc, vitae maximus sem viverra in. Phasellus ut urna pharetra, varius magna in, posuere erat. Nunc in est in leo consectetur dignissim. Curabitur imperdiet vulputate justo non viverra. Sed nec orci sit amet urna feugiat scelerisque. Vestibulum ac erat semper nunc ullamcorper volutpat.
-
-                        Pellentesque a risus turpis. Praesent eget auctor odio, a aliquam ipsum. Nullam ac lacus nibh. Morbi luctus orci dui, eget ullamcorper metus consectetur vel. Quisque aliquet congue feugiat. Phasellus quis tellus pretium, accumsan lorem vel, fermentum risus. Integer a mi tortor. Proin et condimentum enim, quis tempus arcu. Nunc tellus metus, tristique eu congue ac, pharetra at arcu. Ut quis convallis nulla, in rhoncus lacus.
-
-                        Vivamus bibendum neque vel arcu porttitor rutrum. Etiam blandit leo eu justo luctus, in condimentum nulla laoreet. Integer non rhoncus quam. Nulla diam augue, commodo id nunc non, ullamcorper euismod justo. Morbi imperdiet arcu vel metus elementum, sit amet efficitur turpis volutpat. Nullam maximus scelerisque dapibus. Proin sit amet consequat mi, ut pellentesque leo. Cras quam libero, auctor id finibus nec, sagittis in elit. Sed maximus neque eu mi aliquam auctor.
-                    </p>
-                </div>
+        <section aria-labelledby="courses-title" class="home-section course">
+            <div class="container flow volleyballDiv">
+                <header>
+                    <h2 class="section_title text-neutral-100">courses</h2>
+                    <p class="section_subtitle text-neutral-100">step up your front-end game</p>
+                </header>
+                <p>
+                    <strong>Premium courses to help you step up your front-end game in short order.</strong>
+                </p>
+                <p>
+                    While there are a ton of free resources out there, it can be hard to figure out which ones are good, which are bad, and in what order to follow them in.
+                    Because of that, I’ve decided to start creating premium courses to help.
+                    <strong>They are deep dives into specific topics, helping you level up your game in as little time as possible</strong>
+                </p>
+                <p>
+                    I have a number of courses available covering a wide range of CSS goodness. Check out my <a href="">courses page</a> to see them all.
+                </p>
+                <a href="#" class="button" data-reverse="true">LET'S STEP UP MY GAME</a>
             </div>
-
         </section>
 
+        <section aria-labelledby="patreon-title" class="home-section patreon" style="--clr: #e12911">
+            <div class="container flow">
+                <header>
+                    <h2 class="section_title">patreon</h2>
+                    <p class="section_subtitle">help support me</p>
+                </header>
+                <p>
+                    Patreon is a nice, simple way to support creators who provide you with value.
+                    Thanks to my patrons I've been able to upgrade my equipment a few times now, and they've enabled me to devote more time to making videos.
+                </p>
+                <a href="https://patreon.com/kevinpowell" class="button">support me on Patreon</a>
+            </div>
+        </section>
 
 
     </main>
 
-    <footer class="primary-footer | padding-block-700 bg-gray-400 text-accent-400">
-        <div class="container">
-            <div class="primary-footer-wrapper">
-                <div class="primary-footer-logo-social">
-                    <a href="#" aria-label="home">
-                        <img src="images/sneak.png" alt="Nikolasce">
-                    </a>
-
-                    <ul class="social-list" role="list" aria-label="Social links">
-                        <li>
-                            <a aria-label="facebook" href="https://www.facebook.com/nikola.scerbakov/">
-                                <svg class="social-icon">
-                                    <use xlink:href="images/social-icons.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a aria-label="youtube" href="https://www.youtube.com/@nikolasce9">
-                                <svg class="social-icon">
-                                    <use xlink:href="images/social-icons.svg#icon-youtube"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a aria-label="twitter" href="#">
-                                <svg class="social-icon">
-                                    <use xlink:href="images/social-icons.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a aria-label="pinterest" href="#">
-                                <svg class="social-icon">
-                                    <use xlink:href="images/social-icons.svg#icon-pinterest"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a aria-label="instragram" href="https://www.instagram.com/nikolasce/">
-                                <svg class="social-icon">
-                                    <use xlink:href="images/social-icons.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="primary-footer-nav">
-                    <nav class="footer-nav">
-                        <ul class="flow fw-bold" style="--flow-spacer: 1em" aria-label="Footer" role="list">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Community</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="primary-footer-form">
-                    <form action="">
-                        <input class="footerForm" type="email">
-                        <button data-type="inverted" class="button" data-shadow="none">Go</button>
-                    </form>
-                    <p class="fw-bold">Copyright 2023. All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
+    <footer class="primary-footer">
+        <p>Find me elsewhere on the web as well:</p>
+        <ul role="list" class="social-list">
+            <li><a href="https://www.youtube.com/kevinpowell">YouTube</a> </li>
+            <li><a href="https://www.twitch.tv/kevinpowellcss">Twitch</a></li>
+            <li><a href="https://front-end.social/@kevinpowell">Mastodon</a></li>
+            <li><a href="https://twitter.com/kevinJPowell">Twitter</a></li>
+            <li><a href="https://codepen.io/kevinpowell/">CodePen</a></li>
+            <li><a href="https://discord.com/invite/9Rc6WNhNGJ">Discord</a></li>
+            <li><a href="https://github.com/kevin-powell">GitHub</a></li>
+        </ul>
+        <p>
+            © 2024 Kevin Powell Media INC.
+        </p>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
 
     <script type="module" src="/main.js"></script>
 </body>
