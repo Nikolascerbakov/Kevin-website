@@ -376,7 +376,7 @@ body::-webkit-scrollbar-track {
 
 .button {
     --font-weight: 500;
-    background-color: var(--clr);
+    background-color: var( --clr, var(--clr-primary-400));
     border: 0;
     border-radius: 100vw;
     -webkit-box-shadow: 0 0.125em 0.5em rgba(0,0,0,.15);
@@ -796,4 +796,16 @@ a:focus, a:hover {
     text-decoration: none;
 }
 
+.subscriptionDiv {
+    display: flex;
+    flex-direction:column;
+    gap: 1em;
+    background-color: #DEDEDE;
+    padding: 64px;
+    margin: 64px 0px 64px 0px;
+}
 
+.formDiv {
+    display: flex;
+    gap: 1em;
+}
