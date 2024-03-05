@@ -514,6 +514,10 @@ a:visited {
     }
 
 
+.home-section.youtube {
+    background-image: url(images)
+}
+
 
 .youtube {
     --clr: var(--clr-youtubek-400);
