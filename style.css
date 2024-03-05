@@ -443,6 +443,11 @@ body::-webkit-scrollbar-track {
         color: var(--clr,var(--clr-grayblack-500));
     }
 
+.primary-navigation ul>* {
+    margin: 0 0.5em;
+    padding: 0 0.5em;
+}
+
 
 .mobile-nav-toggle {
     display: none;
