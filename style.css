@@ -812,3 +812,64 @@ a:focus, a:hover {
     margin-bottom: 1rem;
 }
 
+.course-grid {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    display: grid;
+    gap: 2rem;
+    /*grid-template-rows: masonry;*/
+    margin: 6rem calc(30% - 30vw);
+    padding: 0 1rem;
+}
+
+@media (min-width: 27em){
+    .course-grid {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+
+} 
+
+.course-card {
+    border-radius: 0.5em;
+    box-shadow: 0 0.25em 1em rgba(0,0,0,.1);
+    padding: 2em;
+}
+
+.course-card h2 a{
+    color: var(--clr-neutral-800);
+    text-decoration: none;
+}
+
+.course-card h2 a:focus, .course-card h2 a:hover {
+    color: var(--clr-course-400);
+}
+
+
+.label {
+    --font-weight: 350;
+    color: var(--clr-neutral-800);
+    display: inline-block;
+    font-size: var(--fs-300);
+    margin-right: 0.25em;
+    margin-top: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+
+    .label + .label:before {
+        border-left: 2px solid var(--clr-neutral-800);
+        content: "";
+        display: inline-block;
+        height: 1.25ex;
+        opacity: .25;
+        padding-left: 0.25em;
+    }
+
+
+    .course-card p:not([class]) {
+        --font-width: 65;
+        font-size: .925em;
+    }
+
