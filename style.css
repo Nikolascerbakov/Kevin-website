@@ -563,6 +563,10 @@ a:visited {
     --clr: var(--clr-course-400);
 }
 
+.home-section.course a:not([class]) {
+    color: #fff;
+}
+
 .resource {
     --clr: var(--clr-resource-400);
 }
