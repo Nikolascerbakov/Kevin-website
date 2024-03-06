@@ -318,45 +318,6 @@ body::-webkit-scrollbar-track {
     }
 }
 
-/* icons */
-.icons a {
-    text-decoration: none;
-}
-
-.icons {
-    grid-area: icons;
-    justify-content: center;
-    display: flex;
-    gap: 2em;
-}
-
-    .icons i {
-        display: block;
-        font-size: 24px;
-        color: black;
-        transition: all .50s ease;
-    }
-
-        .icons i:hover {
-            transform: translateY(-3px);
-        }
-
-.ri-youtube-line:hover {
-    color: var(--clr-youtubek-400);
-}
-
-.ri-instagram-line:hover {
-    color: var(--clr-youtubek-400);
-}
-
-.ri-twitter-x-line:hover {
-    color: #1C9CEB;
-}
-
-.ri-facebook-circle-line:hover {
-    color: #0866FF;
-}
-
 /* button */
 
 .button {
@@ -383,20 +344,20 @@ body::-webkit-scrollbar-track {
     transition: transform .2s ease,-webkit-transform .2s ease;
 }
 
-.button {
+.button{
     text-transform: uppercase;
 }
 
-    .button:hover {
-        color: var(--clr-neutral-100);
-        -webkit-transform: scale(1.05) translateY(-0.125em);
-        transform: scale(1.05) translateY(-0.125em);
-    }
+.button:hover {
+   color: var(--clr-neutral-100);
+   -webkit-transform: scale(1.05) translateY(-0.125em);
+   transform: scale(1.05) translateY(-0.125em);
+ }
 
-    .button[data-reverse=true] {
-        background-color: var(--clr-neutral-100);
-        color: var(--clr, var(--clr-primary-400));
-    }
+.button[data-reverse=true] {
+   background-color: var(--clr-neutral-100);
+   color: var(--clr, var(--clr-primary-400));
+ }
 
 .button:focus:before, .button:hover:before {
      opacity: .3; 
@@ -417,6 +378,40 @@ body::-webkit-scrollbar-track {
     -webkit-transition: opacity .2s ease;
     transition: opacity .2s ease;
     z-index: -1;
+}
+
+.buttonTop:hover {
+    color: var(--clr-neutral-100);
+    -webkit-transform: scale(1.05) translateY(-0.125em);
+    transform: scale(1.05) translateY(-0.125em);
+}
+
+.buttonTop {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    --font-weight: 500;
+    background-color: var( --clr, var(--clr-primary-400));
+    border: 0;
+    border-radius: 100vw;
+    -webkit-box-shadow: 0 0.125em 0.5em rgba(0,0,0,.15);
+    box-shadow: 0 0.125em 0.5em rgba(0,0,0,.15);
+    color: var(--clr-neutral-100);
+    cursor: pointer;
+    display: inline-block;
+    font-size: var(--fs-300);
+    letter-spacing: .04em;
+    line-height: 1;
+    padding: 0.95em 1.75em 0.85em;
+    text-decoration: none;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform .2s ease;
+    transition: -webkit-transform .2s ease;
+    transition: transform .2s ease;
+    transition: transform .2s ease,-webkit-transform .2s ease;
 }
 
 
