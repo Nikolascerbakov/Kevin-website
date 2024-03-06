@@ -873,3 +873,38 @@ a:focus, a:hover {
         font-size: .925em;
     }
 
+.article-snippet:not(:last-child) {
+    position: relative;
+}
+
+.article-snippet:first-of-type {
+    margin-top: 5rem;
+}
+
+.article-snippet:not(:last-child):after {
+    border-bottom: 1px solid var(--clr-neutral-300);
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    margin: 6rem 0;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.article-snippet-title {
+    --font-weight: 750;
+    font-size: var(--fs-600);
+}
+
+.text-neutral-800 {
+    color: var(--clr-neutral-800) !important;
+}
+
+iframe {
+    aspect-ratio: 16 / 9;
+    height: 100%;
+    max-width: 100%;
+}
